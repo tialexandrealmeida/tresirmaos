@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #B70A00;
+    --amarelo: #FFC30DDB;
+}
+
+body {
+    font-family: 'Lato', sans-serif !important;
+    background-color: var(--primary-color);
+    background-size: cover;
+}
+
+header {
+    height: 200px; /* Altura padrão para celulares */
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 330px; /* Altura para computadores */
+    }
+}
+
+/* Estilos para a logo */
+.logo {
+	margin-top: 20px;
+}
+
+/* Estilos para a imagem responsiva */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para o menu de navegação fixo */
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    background-color: rgba(183, 10, 0, 1); /* Utiliza a cor definida por --primary-color com 80% de opacidade */
+    transition: background-color 0.3s ease; /* Transição suave para o fundo */
+}
+
+@media (min-width: 768px) {
+	nav.navbar {
+		background-color: rgba(183, 10, 0, 0.8); /* Utiliza a cor definida por --primary-color com 80% de opacidade */
+	}
+}
+
+.nav-link {
+    color: var(--amarelo) !important; /* Use a variável CSS para definir a cor */
+    font-family: 'Roboto', sans-serif !important; /* Use a nova fonte */
+    font-weight: 700 !important; /* Defina o estilo em negrito */
+    font-size: 1.1em !important; /* Defina o tamanho da fonte */
+    text-transform: uppercase; /* Transforme o texto em maiúsculas */
+    transition: color 0.3s; /* Adicione uma transição suave para a cor da fonte */
+}
+
+.nav-link:hover {
+    color: #ddd !important; /* Define a cor da fonte ao passar o mouse como cinza claro */
+}
+
+.navbar-toggler {
+	color: var(--amarelo) !important;
+}
+
+/* Estilos para a seção de catálogo */
+.catalogo ul {
+    list-style-type: none; /* Remove a bolinha dos itens da lista */
+    padding-left: 0; /* Remove o padding padrão da lista */
+}
+
+.catalogo li {
+    margin-bottom: 10px; /* Adiciona um espaçamento entre os itens da lista */
+	font-size: 1.3em; /* Define o tamanho da fonte */
+}
+
+.catalogo li i {
+    color: var(--amarelo) !important; /* Altera a cor dos ícones para a cor definida pela variável --amarelo */
+    margin-right: 5px; /* Adiciona um espaçamento entre o ícone e o texto */
+}
+
+.catalogo {
+	color: #fff !important;
+}
