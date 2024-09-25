@@ -34,6 +34,7 @@ header {
 
 /* Estilos para o menu de navegação fixo */
 nav.navbar {
+    color: var(--amarelo) !important; /* Use a variável CSS para definir a cor */
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,6 +45,7 @@ nav.navbar {
 
 @media (min-width: 768px) {
 	nav.navbar {
+        color: var(--amarelo) !important; /* Use a variável CSS para definir a cor */
 		background-color: rgba(183, 10, 0, 0.8); /* Utiliza a cor definida por --primary-color com 80% de opacidade */
 	}
 }
