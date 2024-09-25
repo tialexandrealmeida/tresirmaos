@@ -88,3 +88,11 @@ nav.navbar {
 .clientes {
     margin-top: 100px;
 }
+
+.carousel-item img {
+    width: 100px; /* Tamanho menor */
+    height: auto;
+}
+.carousel-item.active img {
+    width: 200px; /* Tamanho maior */
+}
